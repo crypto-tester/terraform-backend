@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/pkg/storage"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/storage"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 func init() {

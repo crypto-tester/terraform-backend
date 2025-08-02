@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/pkg/auth/basic"
-	"github.com/nimbolus/terraform-backend/pkg/auth/jwt"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/auth/basic"
+	"github.com/crypto-tester/terraform-backend/pkg/auth/jwt"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 type Authenticator interface {

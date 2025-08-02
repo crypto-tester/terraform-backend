@@ -8,8 +8,8 @@ import (
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 
-	"github.com/nimbolus/terraform-backend/pkg/storage"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/storage"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 const Name = "s3"

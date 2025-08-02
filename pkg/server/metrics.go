@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/nimbolus/terraform-backend/pkg/kms"
-	"github.com/nimbolus/terraform-backend/pkg/lock"
-	"github.com/nimbolus/terraform-backend/pkg/storage"
+	"github.com/crypto-tester/terraform-backend/pkg/kms"
+	"github.com/crypto-tester/terraform-backend/pkg/lock"
+	"github.com/crypto-tester/terraform-backend/pkg/storage"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

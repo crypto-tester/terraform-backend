@@ -16,8 +16,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"go.uber.org/multierr"
 
-	redisclient "github.com/nimbolus/terraform-backend/pkg/client/redis"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	redisclient "github.com/crypto-tester/terraform-backend/pkg/client/redis"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 const Name = "basic"

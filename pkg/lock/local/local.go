@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 const Name = "local"

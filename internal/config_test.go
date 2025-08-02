@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nimbolus/terraform-backend/internal"
+	"github.com/crypto-tester/terraform-backend/internal"
 	"github.com/spf13/viper"
 )
 

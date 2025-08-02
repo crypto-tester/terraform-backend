@@ -5,10 +5,10 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/pkg/lock"
-	"github.com/nimbolus/terraform-backend/pkg/lock/local"
-	"github.com/nimbolus/terraform-backend/pkg/lock/postgres"
-	"github.com/nimbolus/terraform-backend/pkg/lock/redis"
+	"github.com/crypto-tester/terraform-backend/pkg/lock"
+	"github.com/crypto-tester/terraform-backend/pkg/lock/local"
+	"github.com/crypto-tester/terraform-backend/pkg/lock/postgres"
+	"github.com/crypto-tester/terraform-backend/pkg/lock/redis"
 )
 
 func GetLocker() (l lock.Locker, err error) {

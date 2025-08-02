@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"time"
 
-	pgclient "github.com/nimbolus/terraform-backend/pkg/client/postgres"
-	"github.com/nimbolus/terraform-backend/pkg/storage"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	pgclient "github.com/crypto-tester/terraform-backend/pkg/client/postgres"
+	"github.com/crypto-tester/terraform-backend/pkg/storage"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 const Name = "postgres"

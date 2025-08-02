@@ -7,7 +7,7 @@ import (
 	vault "github.com/hashicorp/vault/api"
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/internal"
+	"github.com/crypto-tester/terraform-backend/internal"
 )
 
 const (

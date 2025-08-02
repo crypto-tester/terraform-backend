@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	vaultclient "github.com/nimbolus/terraform-backend/pkg/client/vault"
+	vaultclient "github.com/crypto-tester/terraform-backend/pkg/client/vault"
 )
 
 const Name = "transit"

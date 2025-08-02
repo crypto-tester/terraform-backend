@@ -7,7 +7,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/pkg/server"
+	"github.com/crypto-tester/terraform-backend/pkg/server"
 )
 
 func main() {

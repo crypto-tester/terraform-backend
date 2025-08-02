@@ -17,11 +17,11 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/gruntwork-io/terratest/modules/terraform"
 
-	localkms "github.com/nimbolus/terraform-backend/pkg/kms/local"
-	"github.com/nimbolus/terraform-backend/pkg/lock"
-	locallock "github.com/nimbolus/terraform-backend/pkg/lock/local"
-	"github.com/nimbolus/terraform-backend/pkg/storage/filesystem"
-	tf "github.com/nimbolus/terraform-backend/pkg/terraform"
+	localkms "github.com/crypto-tester/terraform-backend/pkg/kms/local"
+	"github.com/crypto-tester/terraform-backend/pkg/lock"
+	locallock "github.com/crypto-tester/terraform-backend/pkg/lock/local"
+	"github.com/crypto-tester/terraform-backend/pkg/storage/filesystem"
+	tf "github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 var terraformBinary = flag.String("tf", "terraform", "terraform binary")

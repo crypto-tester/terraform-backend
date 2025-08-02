@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/internal"
+	"github.com/crypto-tester/terraform-backend/internal"
 )
 
 func NewClient() (*sql.DB, error) {

@@ -7,8 +7,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/pkg/lock"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/lock"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 func LockTest(t *testing.T, l lock.Locker) {

@@ -3,7 +3,7 @@ package filesystem
 import (
 	"testing"
 
-	"github.com/nimbolus/terraform-backend/pkg/storage/util"
+	"github.com/crypto-tester/terraform-backend/pkg/storage/util"
 )
 
 func TestStorage(t *testing.T) {

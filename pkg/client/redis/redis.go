@@ -9,7 +9,7 @@ import (
 	redis "github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/internal"
+	"github.com/crypto-tester/terraform-backend/internal"
 )
 
 var ctx = context.Background()

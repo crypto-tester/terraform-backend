@@ -3,7 +3,7 @@ package lock
 import (
 	"fmt"
 
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 type Locker interface {

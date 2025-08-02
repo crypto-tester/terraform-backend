@@ -7,7 +7,7 @@ import (
 
 	redisclient "github.com/crypto-tester/terraform-backend/pkg/client/redis"
 
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 var ctx = context.Background()

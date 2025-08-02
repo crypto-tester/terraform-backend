@@ -5,11 +5,11 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/nimbolus/terraform-backend/internal"
-	vaultclient "github.com/nimbolus/terraform-backend/pkg/client/vault"
-	"github.com/nimbolus/terraform-backend/pkg/kms"
-	"github.com/nimbolus/terraform-backend/pkg/kms/local"
-	"github.com/nimbolus/terraform-backend/pkg/kms/transit"
+	"github.com/crypto-tester/terraform-backend/internal"
+	vaultclient "github.com/crypto-tester/terraform-backend/pkg/client/vault"
+	"github.com/crypto-tester/terraform-backend/pkg/kms"
+	"github.com/crypto-tester/terraform-backend/pkg/kms/local"
+	"github.com/crypto-tester/terraform-backend/pkg/kms/transit"
 )
 
 func GetKMS() (k kms.KMS, err error) {

@@ -12,11 +12,11 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/nimbolus/terraform-backend/pkg/auth"
-	"github.com/nimbolus/terraform-backend/pkg/kms"
-	"github.com/nimbolus/terraform-backend/pkg/lock"
-	"github.com/nimbolus/terraform-backend/pkg/storage"
-	"github.com/nimbolus/terraform-backend/pkg/terraform"
+	"github.com/crypto-tester/terraform-backend/pkg/auth"
+	"github.com/crypto-tester/terraform-backend/pkg/kms"
+	"github.com/crypto-tester/terraform-backend/pkg/lock"
+	"github.com/crypto-tester/terraform-backend/pkg/storage"
+	"github.com/crypto-tester/terraform-backend/pkg/terraform"
 )
 
 func HTTPResponse(w http.ResponseWriter, r *http.Request, code int, body string) {

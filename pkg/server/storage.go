@@ -5,12 +5,12 @@ import (
 
 	"github.com/spf13/viper"
 
+	"github.com/crypto-tester/terraform-backend/internal"
+	"github.com/crypto-tester/terraform-backend/pkg/storage"
+	"github.com/crypto-tester/terraform-backend/pkg/storage/filesystem"
+	"github.com/crypto-tester/terraform-backend/pkg/storage/postgres"
 	"github.com/crypto-tester/terraform-backend/pkg/storage/redis"
-	"github.com/nimbolus/terraform-backend/internal"
-	"github.com/nimbolus/terraform-backend/pkg/storage"
-	"github.com/nimbolus/terraform-backend/pkg/storage/filesystem"
-	"github.com/nimbolus/terraform-backend/pkg/storage/postgres"
-	"github.com/nimbolus/terraform-backend/pkg/storage/s3"
+	"github.com/crypto-tester/terraform-backend/pkg/storage/s3"
 )
 
 func GetStorage() (s storage.Storage, err error) {
