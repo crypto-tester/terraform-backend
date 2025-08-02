@@ -31,12 +31,12 @@ func NewRedisStorage(table string) (*RedisStorage, error) {
 		table: table,
 	}
 
-	err = rdb.Set(ctx, table, 0, 0).Err()
+	err = rdb.Set(ctx, p.table, 0, 0).Err()
 
 	return p, nil
 }
 
-func SaveState(s *terraform.State) error {
+func (p *RedisStorage) SaveState(s *terraform.State) error {
 	rdb, err := redisclient.NewClient()
 
 	if err != nil {
@@ -82,10 +82,19 @@ func GetName() string {
 // 	return s, nil
 // }
 
-// func (p *RedisStorage) DeleteState(id string) error {
-// 	return p.rdb.Del(ctx, id).Result()
+func (p *RedisStorage) DeleteState(table string) error {
+	rdb, err := redisclient.NewClient()
 
-// 	if err != nil {
-// 		panic(err)
-// 	}
-// }
+	if err != nil {
+		return fmt.Errorf("не удалось сериализовать состояние: %w", err)
+	}
+
+	res, err := rdb.Del(ctx, table).Result()
+
+	if err != nil {
+		return fmt.Errorf("Number of keys deleted: %v", err)
+	}
+
+	println("Number of keys deleted:", res)
+	return nil
+}
