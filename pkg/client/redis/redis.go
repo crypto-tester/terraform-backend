@@ -1,14 +1,18 @@
 package redis
 
 import (
+	"context"
 	"fmt"
 	"time"
 
 	redigo "github.com/gomodule/redigo/redis"
+	redis "github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
 
 	"github.com/nimbolus/terraform-backend/internal"
 )
+
+var ctx = context.Background()
 
 func NewPool() *redigo.Pool {
 	viper.SetDefault("redis_addr", "localhost:6379")
@@ -47,4 +51,20 @@ func NewPool() *redigo.Pool {
 			return err
 		},
 	}
+}
+
+func NewClient() (*redis.Client, error) {
+	viper.SetDefault("redis_addr", "localhost:6379")
+	viper.SetDefault("redis_password", "")
+	rdb := redis.NewClient(&redis.Options{
+		Addr:     viper.GetString("redis_addr"),
+		Password: viper.GetString("redis_password"),
+	})
+
+	if err := rdb.Ping(ctx).Err(); err != nil {
+		fmt.Printf("failed to connect to redis server: %s\n", err.Error())
+		return nil, err
+	}
+
+	return rdb, nil
 }

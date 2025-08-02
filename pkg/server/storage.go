@@ -5,6 +5,7 @@ import (
 
 	"github.com/spf13/viper"
 
+	"github.com/crypto-tester/terraform-backend/pkg/redis"
 	"github.com/nimbolus/terraform-backend/internal"
 	"github.com/nimbolus/terraform-backend/pkg/storage"
 	"github.com/nimbolus/terraform-backend/pkg/storage/filesystem"
@@ -23,6 +24,9 @@ func GetStorage() (s storage.Storage, err error) {
 	case postgres.Name:
 		viper.SetDefault("storage_postgres_table", "states")
 		s, err = postgres.NewPostgresStorage(viper.GetString("storage_postgres_table"))
+	case redis.Name:
+		viper.SetDefault("redis", "states")
+		s, err = redis.NewRedisStorage(viper.GetString("redis"))
 	case s3.Name:
 		viper.SetDefault("storage_s3_endpoint", "s3.amazonaws.com")
 		viper.SetDefault("storage_s3_use_ssl", true)
