@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/crypto-tester/terraform-backend/pkg/redis"
+	"github.com/crypto-tester/terraform-backend/pkg/storage/redis"
 	"github.com/nimbolus/terraform-backend/internal"
 	"github.com/nimbolus/terraform-backend/pkg/storage"
 	"github.com/nimbolus/terraform-backend/pkg/storage/filesystem"

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	redisclient "github.com/crypto-tester/terraform-backend/pkg/redis"
+	redisclient "github.com/crypto-tester/terraform-backend/pkg/client/redis"
 
 	"github.com/nimbolus/terraform-backend/pkg/terraform"
 )
